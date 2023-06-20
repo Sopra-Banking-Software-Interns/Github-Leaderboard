@@ -1,11 +1,11 @@
 REPO="Sopra-Banking-Software-Interns/Application-2.0"
-curl -L \
+curl -s -L \
   -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer ${TOKEN}"\
+  -H "Authorization: Bearer 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"\
   -H "X-GitHub-Api-Version: 2022-11-28" \
   https://api.github.com/repos/Sopra-Banking-Software-Interns/Application-2.0/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
 
-ID=$(curl -X POST -H "Content-Type: application/json" -d '{"name": "$REPO"}' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ | jq -r '.result | scan("Game with ID: (.+) added.")[]')
+ID=$(curl -s -X POST -H "Content-Type: application/json" -d '{"name": "$REPO"}' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ | jq -r '.result | scan("Game with ID: (.+) added.")[]')
 
 while read line; do
     login=$(echo $line | jq -r '.login')
@@ -13,3 +13,6 @@ while read line; do
     curl -X POST -H "Content-Type: application/json" -d '{"user": "$login", "score": "$contributions"}' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 done < contributions.txt
 
+jq -s '.' contributions.txt >> contributions.json
+
+rm contributions.txt
