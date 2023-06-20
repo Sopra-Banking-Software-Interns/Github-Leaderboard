@@ -2,7 +2,7 @@
 REPO="Sopra-Banking-Software-Interns/Application-2.0"
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer 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"\
+  -H "Authorization: Bearer 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"\
   -H "X-GitHub-Api-Version: 2022-11-28" \
   https://api.github.com/repos/Sopra-Banking-Software-Interns/Application-2.0/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
 
@@ -31,15 +31,19 @@ done <<< "$elements"
 
 # sed command to delete an instance between <!--START_TABLE-->/, /<!--END_TABLE--> to update new table
 sed -i '/<!--START_TABLE-->/, /<!--END_TABLE-->/d' README.md
+
+echo " - $ID" >> README.md
+
 # JSON data
-json_data=$(cat contributions.json)
+json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/")
+
 # Loop through JSON array
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.login) | \(.contributions) |"' >> README.md
+echo "$json_data" | jq -r '.result[] | "| \(.user) | \(.score) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 git add README.md
 git commit -m "Update LeaderBoard in Readme"
-
+git push origin main
 
