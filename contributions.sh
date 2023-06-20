@@ -39,7 +39,7 @@ json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/
 
 # Loop through JSON array
 echo "<!--START_TABLE-->" >> README.md
-echo "| Login        | Contributions |
+echo "| Login       | Contributions |
 | ------------ | ------------- |" >> README.md
 echo "$json_data" | jq -r '.result[] | "| \(.user) | \(.score) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
