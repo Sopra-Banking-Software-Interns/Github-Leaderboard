@@ -17,14 +17,17 @@ jq -s '.' contributions.txt >> contributions.json
 
 rm contributions.txt
 
-
-linenum="$(grep -n "Username" README.md | tail -n 1 | awk -F ":" '{print $1}')"
-if [[ $linenum != "" ]]
-then
-sed -i "$linenum,\$d" README.md
-fi
-ap=$(echo "Username       Contributions" && cat contributions.json | jq -r '.[] | [.login, .contributions] | @tsv' | column -t)  
-echo "$ap" >> README.md
+# sed command to delete an instance between <!--START_TABLE-->/, /<!--END_TABLE--> to update new table
+sed -i '/<!--START_TABLE-->/, /<!--END_TABLE-->/d' README.md
+# JSON data
+json_data=$(cat contributions.json)
+# Loop through JSON array
+echo "<!--START_TABLE-->" >> README.md
+echo "| Login        | Contributions |
+| ------------ | ------------- |" >> README.md
+echo "$json_data" | jq -r '.[] | "| \(.login) | \(.contributions) |"' >> README.md
+echo "<!--END_TABLE-->" >> README.md
 git add README.md
 git commit -m "Update LeaderBoard in Readme"
+
 rm contributions.json
