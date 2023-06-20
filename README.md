@@ -6,13 +6,14 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 ### PAST IDs :-
  - 4QwYOizPZumKtxyJwdeJ
  - muO2RLV6NRH2mNLOeuJ5
+ - LxpCGGIQok9uIb5LL9A1
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| navvay | 4 |
 | Tushar-2510 | 11 |
-| Suvarchala-30 | 1 |
-| CodePrakhar | 15 |
+| navvay | 4 |
 | Riyu44 | 10 |
+| CodePrakhar | 15 |
+| Suvarchala-30 | 1 |
 | tusharsao | 4 |
 <!--END_TABLE-->
