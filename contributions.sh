@@ -27,4 +27,4 @@ ap=$(echo "Username       Contributions" && cat contributions.json | jq -r '.[] 
 echo "$ap" >> README.md
 git add README.md
 git commit -m "Update LeaderBoard in Readme"
-rm contributions.sh
+rm contributions.json
