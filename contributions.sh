@@ -43,5 +43,5 @@ echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
 echo "$json_data" | jq -r '.result[] | "| \(.user) | \(.score) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
-
+echo "$(cat ./README.md)"
 
