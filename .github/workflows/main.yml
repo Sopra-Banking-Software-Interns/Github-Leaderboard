@@ -6,7 +6,6 @@ on: push
 jobs:
   run_tests:
     runs-on: ubuntu-20.04
-    permissions: read-all|write-all
     steps:
     - uses: actions/checkout@v2
     - name: Configure Git
