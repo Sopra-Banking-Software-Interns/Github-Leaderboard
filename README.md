@@ -9,13 +9,14 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
  - ouGxdnWVmhqZqAGTNQlL
  - WIZSJsqxUHZSPkWGaulg
  - Gcle0LOQI1F5ZMcOeTVr
+ - vxXfJdAoDfstZ2ExZLEy
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| CodePrakhar | 15 |
 | tusharsao | 4 |
 | Tushar-2510 | 11 |
-| Suvarchala-30 | 1 |
 | Riyu44 | 10 |
 | navvay | 4 |
+| Suvarchala-30 | 1 |
+| CodePrakhar | 15 |
 <!--END_TABLE-->
