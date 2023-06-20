@@ -16,3 +16,15 @@ done < contributions.txt
 jq -s '.' contributions.txt >> contributions.json
 
 rm contributions.txt
+
+
+linenum="$(grep -n "Username" README.md | tail -n 1 | awk -F ":" '{print $1}')"
+if [[ $linenum != "" ]]
+then
+sed -i "$linenum,\$d" README.md
+fi
+ap=$(echo "Username       Contributions" && cat contributions.json | jq -r '.[] | [.login, .contributions] | @tsv' | column -t)  
+echo "$ap" >> README.md
+git add README.md
+git commit -m "Update LeaderBoard in Readme"
+rm contributions.sh
