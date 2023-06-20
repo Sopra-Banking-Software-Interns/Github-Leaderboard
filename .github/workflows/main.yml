@@ -1,3 +1,6 @@
+env:
+  token: ${{ secrets.TOKEN }}
+
 name: create-map
 on: push
 jobs:
