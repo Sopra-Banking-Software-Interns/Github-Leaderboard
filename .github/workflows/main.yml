@@ -20,6 +20,8 @@ jobs:
       shell: bash
     - name: commit changes
       run: |
+          git config --global user.email "tusharsao25@gmail.com"
+          git config --global user.name "Tushar-2510"
           git add .
           git commit -m "Commit message from GitHub Actions"
           git push
