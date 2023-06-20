@@ -18,3 +18,8 @@ jobs:
         chmod +x ./contributions.sh
         ./contributions.sh
       shell: bash
+    - name: commit changes
+      run: |
+          git add .
+          git commit -m "Commit message from GitHub Actions"
+          git push
