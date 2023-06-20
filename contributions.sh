@@ -43,7 +43,5 @@ echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
 echo "$json_data" | jq -r '.result[] | "| \(.user) | \(.score) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
-git add README.md
-git commit -m "Update LeaderBoard in Readme"
-git push origin main
+
 
