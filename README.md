@@ -8,10 +8,11 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 ### PAST IDs :-
  - 7aCXps6IyvJlNEjDFQRs
  - iFrRjuwLQN6ueJR0htEV
+ - Q0RV5Fbquckhfaq1yLlB
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
+| Tushar-2510 | 19 |
 | Riyu44 | 15 |
 | tusharsao | 13 |
-| Tushar-2510 | 19 |
 <!--END_TABLE-->
