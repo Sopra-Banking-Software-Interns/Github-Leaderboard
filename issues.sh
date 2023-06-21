@@ -1,20 +1,14 @@
-# curl -L \
-#   -H "Accept: application/vnd.github+json" \
-#   -H "Authorization: Bearer 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"\
-#   -H "X-GitHub-Api-Version: 2022-11-28" \
-#   https://api.github.com/user=Tushar-2510/issues
 
 #!/bin/bash
 
 OWNER="Sopra-Banking-Software-Interns"
 REPO="Github-Leaderboard"
 CONTRIBUTOR="Riyu44"
-ACCESS_TOKEN="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"
 
 # Make a request to fetch the contributor's information
 response=$(curl -s -L \
    -H "Accept: application/vnd.github+json" \
-   -H "Authorization: Bearer $ACCESS_TOKEN" \
+   -H "Authorization: Bearer $token" \
    -H "X-GitHub-Api-Version: 2022-11-28" \
      "https://api.github.com/repos/$OWNER/$REPO/issues?state=closed")
 
