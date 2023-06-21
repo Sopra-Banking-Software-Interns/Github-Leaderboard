@@ -6,10 +6,11 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 - You can check the version of contribution tables for any given ID
 ### PAST Commit Data using API call :-
 
+- [Wed Jun 21 07:17:45 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/w3gWzPTEz9CNcASsKu1C/scores/)
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| tusharsao | 13 |
+| Tushar-2510 | 26 |
 | Riyu44 | 16 |
-| Tushar-2510 | 21 |
+| tusharsao | 14 |
 <!--END_TABLE-->
