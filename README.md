@@ -9,10 +9,11 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
  - 7aCXps6IyvJlNEjDFQRs
  - iFrRjuwLQN6ueJR0htEV
  - Q0RV5Fbquckhfaq1yLlB
+ - xz7wxRjX8q8VUrio2zmS
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| Tushar-2510 | 19 |
-| Riyu44 | 15 |
+| Tushar-2510 | 21 |
 | tusharsao | 13 |
+| Riyu44 | 16 |
 <!--END_TABLE-->
