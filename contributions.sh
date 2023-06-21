@@ -1,10 +1,10 @@
 #GET the contributors list from GIT Hub
-REPO="Sopra-Banking-Software-Interns/Application-2.0"
+REPO="Sopra-Banking-Software-Interns/Github-Learderboard"
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer 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"\
+  -H "Authorization: Bearer $token"\
   -H "X-GitHub-Api-Version: 2022-11-28" \
-  https://api.github.com/repos/Sopra-Banking-Software-Interns/Application-2.0/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
+  https://api.github.com/repos/Sopra-Banking-Software-Interns/Github-Leaderboard/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
 
 #Create a new game on the leaderboard on Cloud storage
 ID=$(curl -s -X POST -H "Content-Type: application/json" -d '{"name": "$REPO"}' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ | jq -r '.result | scan("Game with ID: (.+) added.")[]')
@@ -43,7 +43,5 @@ echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
 echo "$json_data" | jq -r '.result[] | "| \(.user) | \(.score) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
-git add README.md
-git commit -m "Update LeaderBoard in Readme"
-git push origin main
+
 
