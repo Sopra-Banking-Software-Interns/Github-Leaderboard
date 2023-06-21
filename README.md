@@ -12,10 +12,8 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 - [Wed Jun 21 09:03:36 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yHmHxp209X9gYPwQFI31/scores/)
 - [Wed Jun 21 09:04:44 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/272UON2TRBxe7iI2KYx3/scores/)
 - [Wed Jun 21 09:58:18 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/S7kUxRdSKAp3XtMqDs6g/scores/)
+- [Wed Jun 21 10:00:27 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yfh8SYioUY9pquXg9jmO/scores/)
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| Tushar-2510 | [34](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) |
-| Riyu44 | [16](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) |
-| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) |
 <!--END_TABLE-->
