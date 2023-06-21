@@ -3,16 +3,14 @@ Repo to create an automated workflow using Github REST APIs and build a leaderbo
 ## LeaderBoard with contributions are listing below :-
 ### API ENDPOINT :- 
 https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
-- Use this API endpoint and replace the $ID with the 'Past API' IDs given below
 - You can check the version of contribution tables for any given ID
-### PAST IDs :-
- - 7aCXps6IyvJlNEjDFQRs
- - iFrRjuwLQN6ueJR0htEV
- - Q0RV5Fbquckhfaq1yLlB
+### PAST Commit Data using API call :-
+
+Wed Jun 21 07:06:54 UTC 2023 - https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zjdf7EwMQfFsHFppBerE/scores/
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| Tushar-2510 | 19 |
-| Riyu44 | 15 |
+| Tushar-2510 | 21 |
+| Riyu44 | 16 |
 | tusharsao | 13 |
 <!--END_TABLE-->
