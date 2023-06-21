@@ -7,12 +7,10 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 ### PAST Commit Data using API call :-
 
 - [Wed Jun 21 07:17:45 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/w3gWzPTEz9CNcASsKu1C/scores/)
-- [Wed Jun 21 07:19:38 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7uJZXcc1gqMHcWzsHGIW/scores/)
-- [Wed Jun 21 09:02:20 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fErRvp5G0EfBDtj5jwYb/scores/)
-- [Wed Jun 21 09:03:36 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yHmHxp209X9gYPwQFI31/scores/)
-- [Wed Jun 21 09:04:44 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/272UON2TRBxe7iI2KYx3/scores/)
-- [Wed Jun 21 09:58:18 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/S7kUxRdSKAp3XtMqDs6g/scores/)
-- [Wed Jun 21 10:00:27 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yfh8SYioUY9pquXg9jmO/scores/)
+
+- [Wed Jun 21 10:54:36 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iBBQCsAljTvrBQFuOb3u/scores/)
+- [Wed Jun 21 11:16:46 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/z0ksa9TTAIJKY2nrHhi5/scores/)
+- [Wed Jun 21 12:05:28 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/n8fADSfH5syP3saWOocw/scores/)
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |

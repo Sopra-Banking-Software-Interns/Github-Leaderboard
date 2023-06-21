@@ -36,12 +36,12 @@ echo "- [$(date)](https://us-central1-js-capstone-backend.cloudfunctions.net/api
 
 # JSON data
 json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/")
-
+json_data=$(echo "$json_data" | jq -r '.result | sort_by(-.score)')
 # Loop through JSON array
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
-echo "$json_data" | jq -r '.result[] | sort_by(.score) | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) |"' >> README.md
+echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
