@@ -41,7 +41,7 @@ json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions |
 | ------------ | ------------- |" >> README.md
-echo "$json_data" | jq -r '.result[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) |"' >> README.md
+echo "$json_data" | jq -r '.result[] | sort_by(.score) | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
