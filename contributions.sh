@@ -32,7 +32,7 @@ done <<< "$elements"
 # sed command to delete an instance between <!--START_TABLE-->/, /<!--END_TABLE--> to update new table
 sed -i '/<!--START_TABLE-->/, /<!--END_TABLE-->/d' README.md
 
-echo " - $ID" >> README.md
+echo "$(date) - https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/" >> README.md
 
 # JSON data
 json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/")
