@@ -3,7 +3,6 @@
 
 OWNER="Sopra-Banking-Software-Interns"
 REPO="Github-Leaderboard"
-CONTRIBUTOR="Riyu44"
 
 # Make a request to fetch the contributor's information
 response=$(curl -s -L \

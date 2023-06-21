@@ -34,14 +34,25 @@ sed -i '/<!--START_TABLE-->/, /<!--END_TABLE-->/d' README.md
 
 echo "- [$(date)](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/)" >> README.md
 
+OWNER="Sopra-Banking-Software-Interns"
+REPO="Github-Leaderboard"
+
+# Make a request to fetch the contributor's information
+response=$(curl -s -L \
+   -H "Accept: application/vnd.github+json" \
+   -H "Authorization: Bearer $token" \
+   -H "X-GitHub-Api-Version: 2022-11-28" \
+     "https://api.github.com/repos/$OWNER/$REPO/issues?state=closed")
+echo $response | jq -r '[.[] | select( .user.login=="Tushar-2510") | .url] | length' 
+
 # JSON data
 json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/")
 json_data=$(echo "$json_data" | jq -r '.result | sort_by(-.score)')
 # Loop through JSON array
 echo "<!--START_TABLE-->" >> README.md
-echo "| Login        | Contributions |
-| ------------ | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) |"' >> README.md
+echo "| Login        | Contributions | Solved Issues |
+| ------------ | ------------- | ------------- |" >> README.md
+echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user))' | $(echo $response | jq -r '[.[] | select( .user.login=="Tushar-2510") | .url] | length') |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
