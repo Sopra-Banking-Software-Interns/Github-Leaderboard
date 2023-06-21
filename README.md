@@ -8,3 +8,11 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 
 - [Wed Jun 21 07:17:45 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/w3gWzPTEz9CNcASsKu1C/scores/)
 
+- [Wed Jun 21 10:54:36 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iBBQCsAljTvrBQFuOb3u/scores/)
+<!--START_TABLE-->
+| Login        | Contributions |
+| ------------ | ------------- |
+| Tushar-2510 | [34](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) |
+| Riyu44 | [16](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) |
+| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) |
+<!--END_TABLE-->
