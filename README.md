@@ -7,10 +7,12 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 ### PAST Commit Data using API call :-
 
 - [Wed Jun 21 07:17:45 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/w3gWzPTEz9CNcASsKu1C/scores/)
+- [Wed Jun 21 07:19:38 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/7uJZXcc1gqMHcWzsHGIW/scores/)
+- [Wed Jun 21 09:02:20 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fErRvp5G0EfBDtj5jwYb/scores/)
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| Tushar-2510 | 26 |
+| Tushar-2510 | 30 |
 | Riyu44 | 16 |
 | tusharsao | 14 |
 <!--END_TABLE-->
