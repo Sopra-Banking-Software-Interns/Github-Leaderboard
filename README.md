@@ -17,6 +17,7 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 - [Wed Jun 21 10:05:47 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VGtXcf6bur69HZ8Dmv85/scores/)
 - [Wed Jun 21 10:13:39 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Wtdjk3gQou785iItGbYt/scores/)
 - [Wed Jun 21 10:20:53 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BwuBfSNnbj2c5X3sooop/scores/)
+- [Wed Jun 21 10:30:55 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wTYDbVWVBI4de5KmIWLh/scores/)
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
