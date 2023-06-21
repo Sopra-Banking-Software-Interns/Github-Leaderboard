@@ -9,7 +9,7 @@ https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/
 <!--START_TABLE-->
 | Login        | Contributions |
 | ------------ | ------------- |
-| Riyu44 | 16 |
 | tusharsao | 13 |
+| Riyu44 | 16 |
 | Tushar-2510 | 21 |
 <!--END_TABLE-->
