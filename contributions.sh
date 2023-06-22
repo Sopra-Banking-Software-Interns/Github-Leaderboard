@@ -1,5 +1,5 @@
 #GET the contributors list from GIT Hub
-token=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
+
 REPO="Sopra-Banking-Software-Interns/Github-Learderboard"
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
