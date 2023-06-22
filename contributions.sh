@@ -1,4 +1,5 @@
 #GET the contributors list from GIT Hub
+token=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
 REPO="Sopra-Banking-Software-Interns/Github-Learderboard"
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
@@ -20,6 +21,17 @@ rm contributions.json
 # Create a database for the leaderboard
 # Read the JSON file into a variable
 json=$(cat contribution_final.json)
+OWNER="Sopra-Banking-Software-Interns"
+REPO="Github-Leaderboard"
+
+# Make a request to fetch the contributor's information
+response=$(curl -s -L \
+   -H "Accept: application/vnd.github+json" \
+   -H "Authorization: Bearer $token" \
+   -H "X-GitHub-Api-Version: 2022-11-28" \
+     "https://api.github.com/repos/$OWNER/$REPO/issues?state=closed")
+
+
 # Extract the array elements using jq
 elements=$(echo "$json" | jq -c '.[]')
 # Iterate over the array elements
@@ -34,25 +46,46 @@ sed -i '/<!--START_TABLE-->/, /<!--END_TABLE-->/d' README.md
 
 echo "- [$(date)](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/)" >> README.md
 
-OWNER="Sopra-Banking-Software-Interns"
-REPO="Github-Leaderboard"
 
-# Make a request to fetch the contributor's information
-response=$(curl -s -L \
-   -H "Accept: application/vnd.github+json" \
-   -H "Authorization: Bearer $token" \
-   -H "X-GitHub-Api-Version: 2022-11-28" \
-     "https://api.github.com/repos/$OWNER/$REPO/issues?state=closed")
-echo $response | jq -r '[.[] | select( .user.login=="Tushar-2510") | .url] | length' 
+#$(echo $response | jq -r '[.[] | select( .user.login=="Tushar-2510") | .url] | length')
 
 # JSON data
 json_data=$(curl -L "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/$ID/scores/")
 json_data=$(echo "$json_data" | jq -r '.result | sort_by(-.score)')
+echo "$json_data" > contribution_final.json
+touch temp.txt
+jq '.[] | .user' "contribution_final.json" > temp.txt
+
+linenumber=$(sed -n '$=' temp.txt)
+#echo $linenumber
+touch issue.txt
+
+for (( x=1; x<=$linenumber; x++ ))
+do
+linew=$(sed -n "${x}p" temp.txt)
+#echo $linew
+echo "{\"user\":$linew," >>issue.txt
+echo "\"issues\":" >>issue.txt
+arr[x-1]=$(echo $response | jq "[.[] | select(.user.login==$linew) | .url] | length")
+echo "${arr[x-1]}}" >> issue.txt
+done
+
+jq -s '.' issue.txt > issue.json
+rm issue.txt
+echo "$(jq -s 'group_by(.[].user) | map(add)[]' contribution_final.json issue.json)" > data.json
+echo "$(jq 'group_by(.user) | map(add)[]' data.json)" > final.txt
+jq -s '.' final.txt > contribution_final.json
+json_data=$(cat contribution_final.json)
+rm final.txt
+rm issue.json
+rm data.json
+rm temp.txt
+json_data=$(echo "$json_data" | jq -r '. | sort_by(-.score)')
 # Loop through JSON array
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user))' | $(echo $response | jq -r '[.[] | select( .user.login=="Tushar-2510") | .url] | length') |"' >> README.md
+echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | \(.issues) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
