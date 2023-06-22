@@ -90,7 +90,7 @@ json_data=$(echo "$json_data" | jq -r '. | sort_by(-.score)')
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | [\(.issues)](https://getpantry.cloud/apiv1/860a0c02-c763-41ca-9d31-ec787fc3202a//basket/\(.user)) |"' >> README.md
+echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | [\(.issues)](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/\(.user)) |"' >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
