@@ -7,16 +7,22 @@ Repo to create an automated workflow using Github REST APIs and build a leaderbo
 - [Wed Jun 21 07:17:45 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/w3gWzPTEz9CNcASsKu1C/scores/)
 
 - [Wed Jun 21 10:54:36 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iBBQCsAljTvrBQFuOb3u/scores/)
-- [Wed Jun 21 11:16:46 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/z0ksa9TTAIJKY2nrHhi5/scores/)
 
-- [Thu Jun 22 11:00:51 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qSeFhdI6ExsX4YCgD7sH/scores/)
-
-- [Thu Jun 22 11:01:33 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/aAaUna9GVjvFuT4bfhSD/scores/)
+- [Thu, Jun 22, 2023  4:27:30 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/kGBgbznhHxERHAqguLIo/scores/)
+- [Thu, Jun 22, 2023  4:28:55 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9XXuvv9jkn8pyJF6eq62/scores/)
+- [Thu, Jun 22, 2023  4:29:49 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qg88ZRsfYT72UT2OSk1m/scores/)
+- [Thu, Jun 22, 2023  4:34:46 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AjoFRjk2mevpJgAZJrN6/scores/)
+- [Thu, Jun 22, 2023  4:35:28 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FGm76ySQH5ymwvlet25c/scores/)
+- [Thu, Jun 22, 2023  4:36:17 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hKvRCClKYaKKJYqi1Qwl/scores/)
+- [Thu, Jun 22, 2023  4:36:58 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ghLCiF86FTSL0hA4GKjG/scores/)
+- [Thu, Jun 22, 2023  4:37:28 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ShAwl1gYHnhUYEPbQHli/scores/)
+- [Thu, Jun 22, 2023  4:38:17 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/i4HGmWBi8OEspHOrj4Lj/scores/)
+- [Thu Jun 22 11:12:03 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RrdH1lKMAcjx8Fxp8u3T/scores/)
 <!--START_TABLE-->
-| Login        | Contributions |
-| ------------ | ------------- |
-| Tushar-2510 | [54](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) |
-| Riyu44 | [16](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) |
-| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) |
-| Suvarchala-30 | [1](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Suvarchala-30) |
+| Login        | Contributions | Solved Issues |
+| ------------ | ------------- | ------------- |
+| Tushar-2510 | [54](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) | 8 |
+| Riyu44 | [16](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) | 8 |
+| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) | 0 |
+| Suvarchala-30 | [1](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Suvarchala-30) | 2 |
 <!--END_TABLE-->
