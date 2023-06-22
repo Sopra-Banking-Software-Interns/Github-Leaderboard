@@ -11,3 +11,12 @@ Repo to create an automated workflow using Github REST APIs and build a leaderbo
 
 - [Thu Jun 22 11:00:51 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qSeFhdI6ExsX4YCgD7sH/scores/)
 
+- [Thu Jun 22 11:01:33 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/aAaUna9GVjvFuT4bfhSD/scores/)
+<!--START_TABLE-->
+| Login        | Contributions |
+| ------------ | ------------- |
+| Tushar-2510 | [54](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) |
+| Riyu44 | [16](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) |
+| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) |
+| Suvarchala-30 | [1](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Suvarchala-30) |
+<!--END_TABLE-->
