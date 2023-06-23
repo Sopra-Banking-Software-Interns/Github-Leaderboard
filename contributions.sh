@@ -1,5 +1,7 @@
 #GET the contributors list from GIT Hub
 REPO="Sopra-Banking-Software-Interns/Github-Learderboard"
+pantry=860a0c02-c763-41ca-9d31-ec787fc3202a
+token=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
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $token"\
@@ -66,15 +68,16 @@ linew=$(sed -n "${x}p" temp.txt)
 echo "{\"user\":$linew," >>issue.txt
 echo "\"issues\":" >>issue.txt
 arr[x-1]=$(echo $response | jq "[.[] | select(.user.login==$linew) | .url] | length")
-echo $response | jq ".[] | select(.user.login==$linew) | .html_url" > url.txt
+echo $response | jq -r ".[] | select(.user.login==$linew) | .html_url" > url.txt
 sed -i 's/$/,/' url.txt
 txt=$(tr -d '\n' < url.txt)
-echo "{\"URL\":\"$txt\",\"testPayload\": true,\"keysLength\": 3}" >data.json
+echo "{\"URL\":\"$txt\",\"testPayload\": true,\"keysLength\": 3}" >data1.json
+linew=$(echo $linew | tr -d '"')
 curl --location "https://getpantry.cloud/apiv1/pantry/$pantry/basket/$linew" \
 --header 'Content-Type: application/json' \
---data @data.json
+--data @data1.json
 rm url.txt
-rm data.json
+rm data1.json
 echo "${arr[x-1]}}" >> issue.txt
 done
 
