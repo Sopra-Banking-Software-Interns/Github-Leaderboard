@@ -66,14 +66,15 @@ linew=$(sed -n "${x}p" temp.txt)
 echo "{\"user\":$linew," >>issue.txt
 echo "\"issues\":" >>issue.txt
 arr[x-1]=$(echo $response | jq "[.[] | select(.user.login==$linew) | .url] | length")
-txt=$(echo $response | jq ".[] | select(.user.login==$linew) | .url")
+echo $response | jq ".[] | select(.user.login==$linew) | .html_url" > url.txt
+sed -i 's/$/,/' url.txt
+txt=$(tr -d '\n' < url.txt)
+echo "{\"URL\":\"$txt\",\"testPayload\": true,\"keysLength\": 3}" >data.json
 curl --location "https://getpantry.cloud/apiv1/pantry/$pantry/basket/$linew" \
 --header 'Content-Type: application/json' \
---data "{
-	"URL": "$txt",
-  "testPayload": true,
-	"keysLength": 3
-}"
+--data @data.json
+rm url.txt
+rm data.json
 echo "${arr[x-1]}}" >> issue.txt
 done
 
