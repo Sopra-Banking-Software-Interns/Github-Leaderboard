@@ -1,5 +1,4 @@
 #GET the contributors list from GIT Hub
-
 REPO="Sopra-Banking-Software-Interns/Github-Learderboard"
 curl -s -L \
   -H "Accept: application/vnd.github+json" \
@@ -67,6 +66,16 @@ linew=$(sed -n "${x}p" temp.txt)
 echo "{\"user\":$linew," >>issue.txt
 echo "\"issues\":" >>issue.txt
 arr[x-1]=$(echo $response | jq "[.[] | select(.user.login==$linew) | .url] | length")
+echo $response | jq -r ".[] | select(.user.login==$linew) | .html_url" > url.txt
+sed -i 's/$/,/' url.txt
+txt=$(tr -d '\n' < url.txt)
+echo "{\"URL\":\"$txt\",\"testPayload\": true,\"keysLength\": 3}" >data1.json
+linew=$(echo $linew | tr -d '"')
+curl --location "https://getpantry.cloud/apiv1/pantry/$pantry/basket/$linew" \
+--header 'Content-Type: application/json' \
+--data @data1.json
+rm url.txt
+rm data1.json
 echo "${arr[x-1]}}" >> issue.txt
 done
 
@@ -85,7 +94,7 @@ json_data=$(echo "$json_data" | jq -r '. | sort_by(-.score)')
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | \(.issues) |"' >> README.md
+echo "$json_data" | jq -r ".[] | \"| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | [\(.issues)](https://getpantry.cloud/apiv1/pantry/$pantry/basket/\(.user)) |\"" >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
