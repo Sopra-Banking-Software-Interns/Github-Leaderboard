@@ -1,5 +1,6 @@
 env:
   token: ${{ secrets.TOKEN }}
+  pantry: ${{ secrets.PANTRY }}
 
 name: create-map
 on: push

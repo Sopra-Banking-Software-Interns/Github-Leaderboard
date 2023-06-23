@@ -67,11 +67,13 @@ echo "{\"user\":$linew," >>issue.txt
 echo "\"issues\":" >>issue.txt
 arr[x-1]=$(echo $response | jq "[.[] | select(.user.login==$linew) | .url] | length")
 txt=$(echo $response | jq ".[] | select(.user.login==$linew) | .url")
-curl --location "https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/$linew" \
+curl --location "https://getpantry.cloud/apiv1/pantry/$pantry/basket/$linew" \
 --header 'Content-Type: application/json' \
---data '{
+--data "{
 	"URL": "$txt",
-}'
+  "testPayload": true,
+	"keysLength": 3
+}"
 echo "${arr[x-1]}}" >> issue.txt
 done
 
@@ -90,7 +92,7 @@ json_data=$(echo "$json_data" | jq -r '. | sort_by(-.score)')
 echo "<!--START_TABLE-->" >> README.md
 echo "| Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |" >> README.md
-echo "$json_data" | jq -r '.[] | "| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | [\(.issues)](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/\(.user)) |"' >> README.md
+echo "$json_data" | jq -r ".[] | \"| \(.user) | [\(.score)](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=\(.user)) | [\(.issues)](https://getpantry.cloud/apiv1/pantry/$pantry/basket/\(.user)) |\"" >> README.md
 echo "<!--END_TABLE-->" >> README.md
 
 
