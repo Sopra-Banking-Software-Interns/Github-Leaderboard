@@ -20,11 +20,12 @@ Repo to create an automated workflow using Github REST APIs and build a leaderbo
 - [Thu Jun 22 11:12:03 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RrdH1lKMAcjx8Fxp8u3T/scores/)
 - [Thu Jun 22 11:16:54 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/OKSuvE6zkPaOlWXArFi8/scores/)
 - [Fri Jun 23 05:17:49 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4kY0xVDSyKTa1RyrJeml/scores/)
+- [Fri Jun 23 05:19:42 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9zoOeWyZ0182e4qdmdCh/scores/)
 <!--START_TABLE-->
 | Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |
-| Tushar-2510 | [60](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) | [9](https://getpantry.cloud/apiv1/860a0c02-c763-41ca-9d31-ec787fc3202a//basket/Tushar-2510) |
-| Riyu44 | [19](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) | [8](https://getpantry.cloud/apiv1/860a0c02-c763-41ca-9d31-ec787fc3202a//basket/Riyu44) |
-| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) | [0](https://getpantry.cloud/apiv1/860a0c02-c763-41ca-9d31-ec787fc3202a//basket/tusharsao) |
-| Suvarchala-30 | [1](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Suvarchala-30) | [2](https://getpantry.cloud/apiv1/860a0c02-c763-41ca-9d31-ec787fc3202a//basket/Suvarchala-30) |
+| Tushar-2510 | [60](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Tushar-2510) | [9](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/Tushar-2510) |
+| Riyu44 | [19](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Riyu44) | [8](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/Riyu44) |
+| tusharsao | [14](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=tusharsao) | [0](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/tusharsao) |
+| Suvarchala-30 | [1](https://github.com/Sopra-Banking-Software-Interns/Github-Leaderboard/commits?author=Suvarchala-30) | [2](https://getpantry.cloud/apiv1/pantry/860a0c02-c763-41ca-9d31-ec787fc3202a/basket/Suvarchala-30) |
 <!--END_TABLE-->
