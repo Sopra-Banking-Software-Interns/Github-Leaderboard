@@ -12,21 +12,6 @@ Repo to create an automated workflow using Github REST APIs and build a leaderbo
 - [Thu, Jun 22, 2023  4:28:55 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9XXuvv9jkn8pyJF6eq62/scores/)
 - [Thu, Jun 22, 2023  4:29:49 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qg88ZRsfYT72UT2OSk1m/scores/)
 - [Thu, Jun 22, 2023  4:34:46 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AjoFRjk2mevpJgAZJrN6/scores/)
-- [Thu, Jun 22, 2023  4:35:28 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FGm76ySQH5ymwvlet25c/scores/)
-- [Thu, Jun 22, 2023  4:36:17 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hKvRCClKYaKKJYqi1Qwl/scores/)
-- [Thu, Jun 22, 2023  4:36:58 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ghLCiF86FTSL0hA4GKjG/scores/)
-- [Thu, Jun 22, 2023  4:37:28 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ShAwl1gYHnhUYEPbQHli/scores/)
-- [Thu, Jun 22, 2023  4:38:17 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/i4HGmWBi8OEspHOrj4Lj/scores/)
-- [Thu Jun 22 11:12:03 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/RrdH1lKMAcjx8Fxp8u3T/scores/)
-- [Thu Jun 22 11:16:54 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/OKSuvE6zkPaOlWXArFi8/scores/)
-- [Fri Jun 23 05:17:49 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4kY0xVDSyKTa1RyrJeml/scores/)
-- [Fri Jun 23 05:19:42 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9zoOeWyZ0182e4qdmdCh/scores/)
-- [Fri, Jun 23, 2023 12:21:30 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/vywZgTmjWTcfBv5U5RVU/scores/)
-- [Fri, Jun 23, 2023 12:23:52 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/maiYno19a8NTxIXXqsIM/scores/)
-- [Fri, Jun 23, 2023 12:26:45 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/i90Qv8L9FWm2FlGvXpgU/scores/)
-- [Fri, Jun 23, 2023 12:30:00 PM](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bgxMpi0mBXLWc3ydRe56/scores/)
-- [Fri Jun 23 07:02:05 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/WO3Q07fEWmKeyJCbIBoz/scores/)
-- [Fri Jun 23 07:02:50 UTC 2023](https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jhcPEzgFiGtdJ56NCVZn/scores/)
 <!--START_TABLE-->
 | Login        | Contributions | Solved Issues |
 | ------------ | ------------- | ------------- |
