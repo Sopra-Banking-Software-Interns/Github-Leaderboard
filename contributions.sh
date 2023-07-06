@@ -4,7 +4,7 @@ curl -s -L \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $token"\
   -H "X-GitHub-Api-Version: 2022-11-28" \
-  https://api.github.com/repos/Sopra-Banking-Software-Interns/Github-Leaderboard/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
+  https://api.github.com/repos/Sopra-Banking-Software-Interns/Language-agnostic-model/contributors | jq -r '.[] | {login, contributions}' >> contributions.txt
 
 #Create a new game on the leaderboard on Cloud storage
 ID=$(curl -s -X POST -H "Content-Type: application/json" -d '{"name": "$REPO"}' https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ | jq -r '.result | scan("Game with ID: (.+) added.")[]')
@@ -21,7 +21,7 @@ rm contributions.json
 # Read the JSON file into a variable
 json=$(cat contribution_final.json)
 OWNER="Sopra-Banking-Software-Interns"
-REPO="Github-Leaderboard"
+REPO="Language-agnostic-model"
 
 # Make a request to fetch the contributor's information
 response=$(curl -s -L \
